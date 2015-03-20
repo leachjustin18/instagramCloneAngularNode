@@ -3,6 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+var angular = require('angular.min'); 
+
+angular
+.module('Instagram', []); 
+
+/*
 angular.module('Instagram', ['ngRoute', 'ngMessages'])
         .config(['$routeProvider', function ($routeProvider) {
                 //Routes
@@ -26,5 +33,5 @@ angular.module('Instagram', ['ngRoute', 'ngMessages'])
                         .otherwise('/');
 
             }]);
-
+*/
 
