@@ -27,33 +27,15 @@ angular
                         .state('app.home', {
                             url: '',
                             templateUrl: 'partials/home.html'
+                        })
+                        .state('app.log-in', {
+                            url: 'login',
+                            templateUrl: 'partials/login.html'
+                        })
+                        .state('app.sign-up', {
+                            url: 'signup',
+                            templateUrl: 'partials/signup.html'
                         });
             }
         ]);
-
-/*
- angular.module('Instagram', ['ngRoute', 'ngMessages'])
- .config(['$routeProvider', function ($routeProvider) {
- //Routes
- $routeProvider
- .when('/', {
- templateUrl: 'partials/home/.html',
- controller: 'HomeCtrl'
- })
- .when('/login', {
- templateUrl: 'partials/login.html',
- controller: 'LoginCtrl'
- })
- .when('/signup', {
- templateUrl: 'partials/signup.html',
- controller: 'SignupCtrl'
- })
- .when('/photo/:id', {
- templateUrl: 'partials/detail.html',
- controller: 'DetailCtrl'
- })
- .otherwise('/');
- 
- }]);
- */
 
