@@ -5,8 +5,10 @@
  */
 
 var angular = require('angular');
-var angularMessages = require('angular-messages');
-var angularUIRouter = require('angular-ui-router');
+require('angular-messages');
+require('angular-ui-router');
+require('satellizer');
+
 
 angular
         .module('Instagram', [
@@ -38,4 +40,7 @@ angular
                         });
             }
         ]);
+
+
+require('./controllers');
 
