@@ -1,7 +1,7 @@
 {
   "name": "instagramCloneAngularNode",
   "version": "0.0.0",
-  "description": "Creating a sample Instagram app with Angular, Node, Dongo",
+  "description": "Creating a sample Instagram app with Angular, Node, Mongo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

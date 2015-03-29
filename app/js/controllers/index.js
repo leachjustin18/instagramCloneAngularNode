@@ -10,9 +10,9 @@ var app = require('angular').module('Instagram');
 
  app.controller('HomeCtrl', require('./home'));
  app.controller('LoginCtr', require('./login'));
+ app.controller('SignupCtrl', require('./signup')); 
 
 require('./detail'); 
 require('./navbar'); 
-require('./signup');
 
 

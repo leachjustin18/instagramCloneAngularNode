@@ -1,7 +1,25 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Created on : Mar 29, 2015, 4:29:24 PM
+ Author     : Justin Leach
  */
+
+'use strict';
+
+module.exports = ['$scope', '$auth', function ($scope, $auth) {
+        $scope.signup = function () {
+            var user = {
+                email: $scope.email,
+                password: $scope.password
+            };
+
+            //Satellizer
+            $auth.signup(user)
+                    .catch(function (response) {
+                        console.log(response.data);
+                    });
+        };
+    }];
+
+
 
 
