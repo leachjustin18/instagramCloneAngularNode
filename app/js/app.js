@@ -57,5 +57,10 @@ angular
         ]);
 
 
+//Get all directives
+require('./directives'); 
+
+//Get all controllers
 require('./controllers');
+
 
