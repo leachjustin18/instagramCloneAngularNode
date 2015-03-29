@@ -9,11 +9,9 @@
 var app = require('angular').module('Instagram');
 
  app.controller('HomeCtrl', require('./home'));
-
+ app.controller('LoginCtr', require('./login'));
 
 require('./detail'); 
-
-require('./login'); 
 require('./navbar'); 
 require('./signup');
 

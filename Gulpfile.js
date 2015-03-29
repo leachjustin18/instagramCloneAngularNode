@@ -28,7 +28,7 @@ gulp.task('browserify', watchify(function(watchify) {
         .pipe(watchify({
             watch:watching
         }))
-        .pipe(gulp.dest(bundlePaths.destJS))
+        .pipe(gulp.dest(bundlePaths.destJS));
 }));
 
 gulp.task('watchify', ['enable-watch-mode', 'browserify']);
