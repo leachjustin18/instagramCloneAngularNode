@@ -6,7 +6,7 @@
 'use strict';
 
 module.exports = {
-   db: 'localhost', 
+   db: process.env.db || 'localhost', 
    clientSecret: process.env.clientSecret || 'b7c61d0cfc2545658b2dda5b23556ac3', 
    tokenSecret: process.env.tokenSecret || 'stringHardGuess'
 }; 
