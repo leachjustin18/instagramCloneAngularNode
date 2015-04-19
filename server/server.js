@@ -13,6 +13,8 @@ var moment = require('moment');
 var mongoose = require('mongoose');
 var path = require('path');
 var request = require('request');
+
+var config = require('./config.js'); 
  
 var app = express();
  
