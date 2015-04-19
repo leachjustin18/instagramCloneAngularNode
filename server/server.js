@@ -15,6 +15,18 @@ var path = require('path');
 var request = require('request');
 
 var config = require('./config.js'); 
+
+var User = mongoose.model('User', new mongoose.Schema({
+  instagramId: { type: String, index: true },
+  email: { type: String, unique: true, lowercase: true },
+  password: { type: String, select: false },
+  username: String,
+  fullName: String,
+  picture: String,
+  accessToken: String
+}));
+ 
+mongoose.connect(config.db);
  
 var app = express();
  
